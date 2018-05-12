@@ -1,7 +1,7 @@
 {
     "app-id": "org.mozilla.FirefoxUpstreamBinary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.24",
+    "runtime-version": "3.28",
     "sdk": "org.gnome.Sdk",
     "command": "firefox",
     /*"tags": [""],*/
@@ -40,8 +40,8 @@
           "sources": [
               {
                   "type": "archive",
-                  "url": "https://archive.mozilla.org/pub/firefox/releases/55.0/linux-x86_64/en-US/firefox-55.0.tar.bz2",
-                  "sha256": "be8c22ac815af71eebbce83e2a646a10d9d875b4a470a7b251efe94ddb7045df",
+                  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/56.0.2/linux-x86_64/en-US/firefox-56.0.2.tar.bz2",
+                  "sha256": "547b60180da45bdb06724b1bb53d9a9582266d619ce84c7f4670dd18e05c6858",
                   "dest": "firefox"
               },
               {
