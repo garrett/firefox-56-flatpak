@@ -2,16 +2,11 @@
 set -e
 #rm -rf app repo
 rm -rf app
-if [ -z $1 ]; then
-  echo "Usage: $0 APP"
-  echo ""
-  echo "Example"
-  echo "  $0 org.mozilla.FirefoxDevEdition"
-  exit 1
-else
-  APP_NAME=$1
-fi
 
+APP_NAME=org.mozilla.FirefoxUpstreamBinary
+
+# Install repo
+flatpak install flathub org.gnome.Sdk 3.28
 
 # Build repo
 flatpak-builder $GPG_SETTINGS --verbose --force-clean --ccache --require-changes --repo=repo --subject="Build of $APP_NAME" app $APP_NAME/$APP_NAME.json
