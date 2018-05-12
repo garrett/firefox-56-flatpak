@@ -1,18 +1,16 @@
 # firefox-flatpak
-This is a set of patches, scripts and a manifest to build latest Firefox using Flatpak. It is using GNOME 3.22 as base runtime.
+
+**IMPORTANT**: Do not use unless you really know what you're doing. This is an old, unsupported version of Firefox with security issues.
+
+This is a set of scripts and a manifest to build Firefox 56 using Flatpak. It is using GNOME 3.28 as base runtime.
 
 # Usage
 
-Run ```./setup_runtime.sh``` to download and install GNOME 3.20 SDK and GNOME 3.22 SDK for Flatpak.
-
-Currently there are three builds available:
-* org.mozilla.FirefoxNightly - to build latest nightly
-* org.mozilla.FirefoxNightlyWayland - to build nightly with wayland support
-* org.mozilla.FirefoxDevEdition - Firefox Developer Edition (branded aurora build)
+Run ```./setup_runtime.sh``` to download and install GNOME 3.20 SDK and GNOME 3.28 SDK for Flatpak.
 
 To build specific build run:
 ```
-./build.sh BUILD_NAME
+./build.sh
 ```
 for example 
 ```
@@ -22,12 +20,12 @@ will build Firefox from master branch.
 
 After the build is finished you can install the app by:
 ```
-./install.sh BUILD_NAME
+./install.sh
 ```
 
 To start Firefox use:
 ```
-flatpak run BUILD_NAME
+flatpak run org.mozilla.FirefoxUpstreamBinary
 ```
 
 For example:
