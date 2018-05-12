@@ -2,7 +2,7 @@
 <!-- Copyright 2016 Jiri Eischmann <eischmann@redhat.com> -->
 <application>
   <id type="desktop">org.mozilla.FirefoxUpstreamBinary.desktop</id>
-  <name>Firefox Upstream Binary</name>
+  <name>Firefox 56</name>
   <summary>Firefox Web Browser</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MPL-2.0</project_license>

@@ -5,7 +5,7 @@
     "sdk": "org.gnome.Sdk",
     "command": "firefox",
     /*"tags": [""],*/
-    "desktop-file-name-suffix": " Upstream Binary",
+    "desktop-file-name-suffix": " 56",
     "rename-desktop-file": "org.mozilla.Firefox.desktop",
     "rename-appdata-file" : "org.mozilla.Firefox.appdata.xml",
     "rename-icon" : "org.mozilla.Firefox",
