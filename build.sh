@@ -6,7 +6,7 @@ rm -rf app
 APP_NAME=org.mozilla.FirefoxUpstreamBinary
 
 # Install repo
-flatpak install flathub org.gnome.Sdk 3.28
+#flatpak install flathub org.gnome.Sdk 3.28
 
 # Build repo
 flatpak-builder $GPG_SETTINGS --verbose --force-clean --ccache --require-changes --repo=repo --subject="Build of $APP_NAME" app $APP_NAME/$APP_NAME.json
